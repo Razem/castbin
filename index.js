@@ -10,9 +10,6 @@ contentInput.addEventListener('input', () => {
   window.location.hash = '#' + hashData
 })
 
-// Set focus on page load
-contentInput.focus()
-
 // Invoke share action
 document.querySelector('#share').addEventListener('click', () => {
   navigator.share?.({ url: window.location.href })
