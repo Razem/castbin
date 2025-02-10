@@ -9,7 +9,7 @@ shareLink.href = window.location.href
 // Update URL on input
 contentInput.addEventListener('input', () => {
   hashData.set('x', contentInput.value)
-  window.location.hash = '#' + hashData
+  window.location.replace('#' + hashData)
   shareLink.href = window.location.href
 })
 
